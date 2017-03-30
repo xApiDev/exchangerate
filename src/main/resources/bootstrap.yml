@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: exchangeratee
+  cloud:
+    config:
+      failFast: true
+      uri: http://localhost:8888
+---
+spring:
+  profiles: development
+  application:
+    name: exchangeratee
+  cloud:
+    config:
+      failFast: true
+      uri: https://config-server-xapi.cfapps.io/
